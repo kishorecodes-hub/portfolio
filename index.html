@@ -22,9 +22,38 @@ nav {
   position: sticky;
   top: 0;
   background: #1f3b57;
-  padding: 12px;
-  text-align: center;
+  padding: 10px;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* reduced gap */
+  flex-wrap: nowrap;
+  overflow: hidden; /* removed scrollbar */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  font-size: 14px;
 }
 
 nav a {
@@ -150,7 +179,7 @@ footer {
   <h1>Kishore M</h1>
   <p id="typing"></p>
   <br>
-  <a href="Resume.pdf" download style="color:white; text-decoration:none; border:1px solid white; padding:8px 14px; border-radius:6px; display:inline-block; margin-top:10px;"> Download Resume</a>
+  <a href="resume.pdf" download style="color:white; text-decoration:none; border:1px solid white; padding:8px 14px; border-radius:6px; display:inline-block; margin-top:10px;"> Download Resume</a>
 </header>
 
 <div class="container">
@@ -212,8 +241,8 @@ Arduino Course (In Progress)
 <h2>Contact</h2>
 <div class="card">
 📧 Email: kishoretnj2008@gmail.com <br>
-💻 GitHub: <a href="https://github.com/kishorecodes-hub target="_blank">My GitHub</a><br>
-🔗 LinkedIn: <a href="https://www.linkedin.com/in/kishore-m-97876a370/" target="_blank">My LinkedIn</a>
+💻 GitHub: <a href="https://github.com/kishorecodes-hub" target="_blank">My GitHub</a><br>
+🔗 LinkedIn: <a href="#" target="_blank">My LinkedIn</a>
 </div>
 </section>
 
@@ -228,7 +257,7 @@ function toggleMode() {
   document.body.classList.toggle("dark");
 }
 
-const text = ["CSE Student",  "AI Enthusiast"];
+const text = ["CSE Student", "Full Stack Developer", "AI Enthusiast"];
 let i = 0, j = 0, current = "", isDeleting = false;
 
 function type() {
